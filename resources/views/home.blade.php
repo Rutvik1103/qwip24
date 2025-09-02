@@ -5,17 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Qwip24 Navbar & Footer</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body, html {
+      height: 100%;
+    }
+
     /* Navbar */
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #0d47a1;
+      background: #ffffff;   /* keep navbar white */
       padding: 15px 50px;
+      width: 100%;
     }
     .navbar .logo {
       color: #010101;
@@ -26,8 +33,6 @@
     }
     .navbar ul {
       list-style: none;
-      margin: 0;
-      padding: 0;
       display: flex;
     }
     .navbar ul li {
@@ -42,6 +47,7 @@
     .navbar ul li a:hover {
       background: #1976d2;
       border-radius: 5px;
+      color: #fff;
     }
     .navbar ul li ul {
       display: none;
@@ -56,22 +62,42 @@
     .navbar ul li:hover ul {
       display: block;
     }
-    .navbar ul li ul li a {
-      padding: 10px 15px;
+
+    /* Heading Section */
+    .contacttt .heading-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #4e2b2b;  /* dark red full width */
+      padding: 50px 10%;
+      width: 100%;
+      margin-top: 30%;
     }
-    .navbar ul li ul li a:hover {
-      background: #1565c0;
+    .contacttt h1 {
+      color: #ffffff;
+      margin: 0;
+      font-size: 28px;
     }
-    .css{
-      padding-right: 20%;
+    .contactt {
+      background-color: #e8f3ff;
+      color: #000000;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .contactt:hover {
+      background-color: #0d47a1;
+      color: #fff;
     }
 
     /* Footer */
     .footer {
-      background: #0d47a1;
-      color: #fff;
-      padding: 50px 20px;
-      margin-top: 50px;
+      background: #000000;  /* solid black full width */
+      color: #e8dfdf;
+      padding: 50px 20px 20px;
+      width: 100%;
     }
     .footer-container {
       display: flex;
@@ -80,7 +106,6 @@
       margin: auto;
       gap: 40px;
     }
-    /* Left Column - Form */
     .footer-left {
       flex: 1;
       min-width: 300px;
@@ -107,15 +132,15 @@
       height: 100px;
     }
     .footer-left form button {
-      background: #1976d2;
-      color: #fff;
+      background: #4e2b2b;
+      color: #fff2f2;
       cursor: pointer;
       font-size: 16px;
+      width: 30%;
     }
     .footer-left form button:hover {
       background: #1565c0;
     }
-    /* Right Column - Lists */
     .footer-right {
       flex: 2;
       display: flex;
@@ -141,12 +166,12 @@
       margin-bottom: 10px;
     }
     .footer-right ul li a {
-      color: #ccc;
+      color: #eeecec;
       text-decoration: none;
       font-size: 14px;
     }
     .footer-right ul li a:hover {
-      color: #fff;
+      color: #1565c0;
     }
     .footer-bottom {
       text-align: center;
@@ -154,39 +179,35 @@
       font-size: 14px;
       border-top: 1px solid #1976d2;
       padding-top: 15px;
-      color: #ccc;
+      color: #ffffff;
     }
-    .address{
-        padding-left: 50%;
-    }
-   .link{
-    padding-left: 50%;
-   }
-    
+
     /* Navbar Button */
     .navbar .get-started {
-      background-color: #1976d2;
-      color: #fff;
+      background-color: #ffffff;
+      color: #000000;
       padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
-      
       transition: background 0.3s;
-     
+    }
+    .navbar .get-started:hover {
+      background-color: #0a0fa2;
+      color: #ffffff;
     }
 
-    .navbar .get-started:hover {
-      background-color: #1565c0;
-       
-    }
-    
     @media (max-width: 768px) {
       .footer-container {
         flex-direction: column;
       }
       .footer-right {
         flex-direction: column;
+      }
+      .contacttt .heading-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
       }
     }
   </style>
@@ -197,30 +218,40 @@
   <nav class="navbar">
     <a href="#" class="logo">Qwip24</a>
     <div class="css">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li>
-        <a href="#">Solutions ▾</a>
-        <ul>
-          <li><a href="#">Digital Experience Platform</a></li>
-          <li><a href="#">Digital Experience Designing</a></li>
-          <li><a href="#">Robotic Process Automation</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Services ▾</a>
-        <ul>
-          <li><a href="#">Drupal Development Services</a></li>
-          <li><a href="#">WordPress Development Services</a></li>
-          <li><a href="#">Application Maintenance & Support</a></li>
-        </ul>
-      </li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Solutions ▾</a>
+          <ul>
+            <li><a href="{{route('platform')}}">Digital Experience Platform</a></li>
+            <li><a href="#">Digital Experience Designing</a></li>
+            <li><a href="#">Robotic Process Automation</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Services ▾</a>
+          <ul>
+            <li><a href="#">Drupal Development Services</a></li>
+            <li><a href="#">WordPress Development Services</a></li>
+            <li><a href="#">Application Maintenance & Support</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
     </div>
-      <a href="#" class="get-started">Let's Get Started!</a>
+    <a href="#" class="get-started">Let's Get Started!</a>
   </nav>
+
+  
+
+  <!-- Heading Section -->
+  <div class="contacttt">
+    <div class="heading-row">
+      <h1>dholakiya rutvik contact</h1>
+      <a href="#" class="contactt">Contact Us Now!</a>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -247,9 +278,7 @@
 
       <!-- Right Side: Links & Address -->
       <div class="footer-right">
-        
         <div class="link">
-         
           <ul>
             <li><a href="#">Web Development</a></li>
             <li><a href="#">Drupal</a></li>
@@ -258,9 +287,8 @@
             <li><a href="#">24/7 Support</a></li>
           </ul>
         </div>
-      
+
         <div>
-          
           <ul>
             <li><a href="#">Careers</a></li>
             <li><a href="#">Blog</a></li>
@@ -268,7 +296,7 @@
             <li><a href="#">Case Studies</a></li>
           </ul>
         </div>
-        
+
         <div class="address">
           <h4>Address</h4>
           <ul>
