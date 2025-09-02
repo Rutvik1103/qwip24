@@ -4,353 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QWIP24 - Digital Experience Platform</title>
-  <style>
-    /* ===== Global Reset ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
 
-    body {
-      background: #fff;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    ===== Navbar =====
-   
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    .logo span:first-child {
-      color: #f58220; /* Orange */
-    }
-
-     .nav-btn {
-      border: 2px solid #f58220;
-      padding: 8px 16px;
-      border-radius: 8px;
-      background: none;
-      color: #2a6edc;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }  
-
-    .nav-btn:hover {
-      background: #f58220;
-      color: white;
-    }
-
-    /* ===== Hero Section ===== */
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 120px;
-      gap: 200px;
-    }
-
-    .hero-text {
-      flex: 1;
-    }
-
-    .hero-text h1 {
-      font-size: 42px;
-      color: #2a6edc;
-      margin-top: 5px;
-      margin-bottom: 29px;
-     border-bottom: 2px solid #f58220;
-    }
-
-    .hero-text p {
-      font-size: 18px;
-      margin-bottom: 20px;
-      color: #555;
-    }
-
-    .hero-text .btn {
-      background: #2a6edc;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .hero-text .btn:hover {
-      background: #f58220;
-    }
-
-    .hero-img {
-      flex: 1;
-    }
-
-    .hero-img img {
-      width: 100%;
-      max-width: 500px;
-    }
-
-   
-
-    /* ===== Section Wrapper ===== */
-.dxp-section {
-  padding: 60px 80px;
-  background: #fff;
-  color: #333;
-}
-
-.dxp-container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* ===== Intro Section ===== */
-.dxp-intro h2 {
-  font-size: 28px;
-  color: #2a6edc;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #f58220;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.dxp-intro p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.8;
-  margin-top: 23px;
-}
-
-/* ===== Benefits Section ===== */
-.dxp-benefits {
-  margin-top: 60px;
-}
-
-.dxp-benefits h2 {
-  font-size: 26px;
-  color: #2a6edc;
-  border-bottom: 2px solid #f58220;
-  margin-bottom: 90px;
-  display: inline-block;
-  padding-bottom: 4px;
-}
-
-.benefit-boxes {
-display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-gap: 160px; /* spacing between boxes */
-  justify-items: center; /* center items horizontally */
-  align-items: start
-}
-
-.benefit { 
-  text-align: center;
-}
-
-.benefit h3 {
-  font-size: 23px;
-  color: #2a6edc;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #f58220;
-  display: inline-block;
-  padding-bottom: 4px;
-}
-
-.benefit img {
-  width: 100%;
-  max-width: 290px;
-  margin-top: 20px;
-}
-
-  .bene {
-    text-align: center;
-  }
-
-  .bene h3 {
-  font-size: 20px;
-  color: #2a6edc;
-  margin-top: 100px;
-  margin-right: 700px;
-  border-bottom: 2px solid #d67927;
-  display: inline-block;
-  padding-bottom: 4px;
-  
-}
-
-.bene img {
-  width: 100%;
-  max-width: 290px;
-  margin-top: 30px;
-  margin-right: 700px;
-}
-.bene p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.8;
-  margin-top: 20px;
-  margin-right: 700px;
-}
-
-/* select section */
-
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .main-title {
-            font-size: 2.5rem;
-            font-weight: 300;
-            color: #4a90e2;
-            margin-bottom: 40px;
-            letter-spacing: -0.5px;
-        }
-
-        .solutions-list {
-            margin-bottom: 60px;
-        }
-
-        .solution-item {
-            border-bottom: 1px solid #e0e0e0;
-            margin-bottom: 0;
-        }
-
-        .solution-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 0;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .solution-header:hover {
-            background-color: #f5f7fa;
-            padding-left: 10px;
-        }
-
-        .solution-title {
-            font-size: 1.5rem;
-            font-weight: 300;
-            color: #333;
-            letter-spacing: -0.3px;
-        }
-
-        .expand-icon {
-            width: 24px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 1.2rem;
-            transition: transform 0.3s ease;
-        }
-
-        .solution-item.active .expand-icon {
-            transform: rotate(45deg);
-        }
-
-        .solution-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-            background-color: #f9f9f9;
-        }
-
-        .solution-item.active .solution-content {
-            max-height: 300px;
-        }
-
-        .solution-description {
-            padding: 20px;
-            color: #666;
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            font-weight: 300;
-            color: #4a90e2;
-            margin-bottom: 20px;
-            letter-spacing: -0.4px;
-        }
-
-        .section-description {
-            font-size: 1rem;
-            color: #666;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .highlight-text {
-            color: #4a90e2;
-            font-weight: 500;
-        }
-
-
-/* ===== Responsive ===== */
-@media (max-width: 900px) {
-
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-      nav {
-        flex-direction: column;
-        gap: 15px;
-      }
-      
-  .dxp-section {
-    padding: 40px 20px;
-  }
-  .benefit-boxes {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-    @media (max-width: 768px) {
-   .main-title {
-     font-size: 2rem;
-       }
-  .section-title {
-      font-size: 1.5rem;
-            }
-  .solution-title {
-      font-size: 1.2rem;
-            }
-  .container {
-      padding: 20px 15px;
-            }
-  }
-
-  </style>
+  <link rel="stylesheet" href="{{asset('css/solution1.css')}}">
+    <link rel="stylesheet" href="{{asset('css/home.css')}}">
+ 
 </head>
-<body>
 
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="logo">Qwip24</a>
+    <div class="css">
+      <ul>
+        <li><a href="{{route('home')}}">Home</a></li>
+        <li>
+          <a href="#">Solutions ▾</a>
+          <ul>
+            <li><a href="{{route('platform')}}">Digital Experience Platform</a></li>
+            <li><a href="#">Digital Experience Designing</a></li>
+            <li><a href="#">Robotic Process Automation</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Services ▾</a>
+          <ul>
+            <li><a href="#">Drupal Development Services</a></li>
+            <li><a href="#">WordPress Development Services</a></li>
+            <li><a href="#">Application Maintenance & Support</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <a href="#" class="get-started">Let's Get Started!</a>
+  </nav>
+
+  
   <!-- ===== Hero Section ===== -->
   <section class="hero">
     <div class="hero-text">
@@ -443,7 +133,7 @@ display: grid;
   
                                                        {{-- #my select section # --}}
 
-  <div class="container">
+  <div class="select-container">
         <h1 class="main-title">DXP Solutions We Excel At QWIP24</h1>
         
         <div class="solutions-list">
@@ -551,6 +241,7 @@ display: grid;
                 </div>
             </div>
         </div>
+      </div>
 
       <script>
         function toggleSolution(header) {
@@ -584,6 +275,76 @@ display: grid;
 
 
 
+
+  <!-- Heading Section -->
+  <div class="contacttt">
+    <div class="heading-row">
+      <h1>dholakiya rutvik contact</h1>
+      <a href="#" class="contactt">Contact Us Now!</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left Side: Get in Touch Form -->
+      <div class="footer-left">
+        <h3>Get in Touch</h3>
+        <form>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email" required>
+          <input type="tel" placeholder="Phone" required>
+          <select required>
+            <option value="">Select Service</option>
+            <option>Web Development</option>
+            <option>Drupal Development</option>
+            <option>WordPress Development</option>
+            <option>Automation</option>
+            <option>24/7 Support</option>
+          </select>
+          <textarea placeholder="Comment" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Right Side: Links & Address -->
+      <div class="footer-right">
+        <div class="link">
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Drupal</a></li>
+            <li><a href="#">WordPress</a></li>
+            <li><a href="#">Automation</a></li>
+            <li><a href="#">24/7 Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Case Studies</a></li>
+          </ul>
+        </div>
+
+        <div class="address">
+          <h4>Address</h4>
+          <ul>
+            <li>Qwip24 Technologies Pvt. Ltd.</li>
+            <li>Ahmedabad, India</li>
+            <li>Email: info@qwip24.com</li>
+            <li>Phone: +91-9876543210</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      © 2025 Qwip24. All Rights Reserved.
+    </div>
+  </footer>
 
 
 </body>

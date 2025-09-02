@@ -9,4 +9,6 @@ Route::get('/', function () {
 });
 
 
+Route::view('/home', 'home')->name('home');
+
 Route::view('/platform', 'dxp_platform')->name('platform');
