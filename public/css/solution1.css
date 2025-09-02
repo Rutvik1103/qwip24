@@ -1,4 +1,4 @@
-/* ===== Global Reset ===== */
+
     * {
       margin: 0;
       padding: 0;
@@ -10,6 +10,7 @@
       background: #fff;
       color: #333;
       line-height: 1.6;
+
     }
      * {
             margin: 0;
@@ -312,4 +313,6 @@ display: grid;
   .container {
       padding: 20px 15px;
             }
-  }
+
+          }
+        
