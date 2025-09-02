@@ -3,5 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('dxp_platform');
+
+    return view('home');
+    
 });
+
+
+Route::view('/platform', 'dxp_platform')->name('platform');
