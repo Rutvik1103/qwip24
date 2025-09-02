@@ -4,348 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QWIP24 - Digital Experience Platform</title>
+  <link rel="stylesheet" href="{{ asset('css/solution1.css') }}">
   <style>
-    /* ===== Global Reset ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #fff;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    ===== Navbar =====
-   
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    .logo span:first-child {
-      color: #f58220; /* Orange */
-    }
-
-     .nav-btn {
-      border: 2px solid #f58220;
-      padding: 8px 16px;
-      border-radius: 8px;
-      background: none;
-      color: #2a6edc;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }  
-
-    .nav-btn:hover {
-      background: #f58220;
-      color: white;
-    }
-
-    /* ===== Hero Section ===== */
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 120px;
-      gap: 200px;
-    }
-
-    .hero-text {
-      flex: 1;
-    }
-
-    .hero-text h1 {
-      font-size: 42px;
-      color: #2a6edc;
-      margin-top: 5px;
-      margin-bottom: 29px;
-     border-bottom: 2px solid #f58220;
-    }
-
-    .hero-text p {
-      font-size: 18px;
-      margin-bottom: 20px;
-      color: #555;
-    }
-
-    .hero-text .btn {
-      background: #2a6edc;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .hero-text .btn:hover {
-      background: #f58220;
-    }
-
-    .hero-img {
-      flex: 1;
-    }
-
-    .hero-img img {
-      width: 100%;
-      max-width: 500px;
-    }
-
-   
-
-    /* ===== Section Wrapper ===== */
-.dxp-section {
-  padding: 60px 80px;
-  background: #fff;
-  color: #333;
-}
-
-.dxp-container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* ===== Intro Section ===== */
-.dxp-intro h2 {
-  font-size: 28px;
-  color: #2a6edc;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #f58220;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.dxp-intro p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.8;
-  margin-top: 23px;
-}
-
-/* ===== Benefits Section ===== */
-.dxp-benefits {
-  margin-top: 60px;
-}
-
-.dxp-benefits h2 {
-  font-size: 26px;
-  color: #2a6edc;
-  border-bottom: 2px solid #f58220;
-  margin-bottom: 90px;
-  display: inline-block;
-  padding-bottom: 4px;
-}
-
-.benefit-boxes {
-display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-gap: 160px; /* spacing between boxes */
-  justify-items: center; /* center items horizontally */
-  align-items: start
-}
-
-.benefit { 
-  text-align: center;
-}
-
-.benefit h3 {
-  font-size: 23px;
-  color: #2a6edc;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #f58220;
-  display: inline-block;
-  padding-bottom: 4px;
-}
-
-.benefit img {
-  width: 100%;
-  max-width: 290px;
-  margin-top: 20px;
-}
-
-  .bene {
-    text-align: center;
-  }
-
-  .bene h3 {
-  font-size: 20px;
-  color: #2a6edc;
-  margin-top: 100px;
-  margin-right: 700px;
-  border-bottom: 2px solid #d67927;
-  display: inline-block;
-  padding-bottom: 4px;
-  
-}
-
-.bene img {
-  width: 100%;
-  max-width: 290px;
-  margin-top: 30px;
-  margin-right: 700px;
-}
-.bene p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.8;
-  margin-top: 20px;
-  margin-right: 700px;
-}
-
-/* select section */
-
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .main-title {
-            font-size: 2.5rem;
-            font-weight: 300;
-            color: #4a90e2;
-            margin-bottom: 40px;
-            letter-spacing: -0.5px;
-        }
-
-        .solutions-list {
-            margin-bottom: 60px;
-        }
-
-        .solution-item {
-            border-bottom: 1px solid #e0e0e0;
-            margin-bottom: 0;
-        }
-
-        .solution-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 0;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .solution-header:hover {
-            background-color: #f5f7fa;
-            padding-left: 10px;
-        }
-
-        .solution-title {
-            font-size: 1.5rem;
-            font-weight: 300;
-            color: #333;
-            letter-spacing: -0.3px;
-        }
-
-        .expand-icon {
-            width: 24px;
-            height: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 1.2rem;
-            transition: transform 0.3s ease;
-        }
-
-        .solution-item.active .expand-icon {
-            transform: rotate(45deg);
-        }
-
-        .solution-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-            background-color: #f9f9f9;
-        }
-
-        .solution-item.active .solution-content {
-            max-height: 300px;
-        }
-
-        .solution-description {
-            padding: 20px;
-            color: #666;
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            font-weight: 300;
-            color: #4a90e2;
-            margin-bottom: 20px;
-            letter-spacing: -0.4px;
-        }
-
-        .section-description {
-            font-size: 1rem;
-            color: #666;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .highlight-text {
-            color: #4a90e2;
-            font-weight: 500;
-        }
-
-
-/* ===== Responsive ===== */
-@media (max-width: 900px) {
-
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-      nav {
-        flex-direction: column;
-        gap: 15px;
-      }
-      
-  .dxp-section {
-    padding: 40px 20px;
-  }
-  .benefit-boxes {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-    @media (max-width: 768px) {
-   .main-title {
-     font-size: 2rem;
-       }
-  .section-title {
-      font-size: 1.5rem;
-            }
-  .solution-title {
-      font-size: 1.2rem;
-            }
-  .container {
-      padding: 20px 15px;
-            }
-  }
 
   </style>
 </head>
@@ -368,6 +28,7 @@ display: grid;
   <div class="dxp-container">
 
     <!-- Why Choose Section -->
+
     <div class="dxp-intro">
       <h2>Why Choose Digital Experience Platform (DXP)?</h2>
       <p>
@@ -379,6 +40,7 @@ display: grid;
     </div>
 
     <!-- Benefits Section -->
+
     <div class="dxp-benefits">
       <h2>Benefits of Digital Experience Platforms (DXP)</h2>
 
@@ -389,8 +51,7 @@ display: grid;
           <h3>Enhanced Online Presence</h3>
           <img src="https://cdn-icons-png.flaticon.com/512/6212/6212939.png" alt="Online Presence">
              <p>
-        Digital Experience Platform (DXP) furnishes the customer’s journey and experience with a business or brand 
-        with a motive to reimagine their engagement.
+                  DXP makes it easier for a business to cover all bases at once with incredible flexibility and speed. It allows your brand to deploy individual digital experiences for employees, customers, and stakeholders amidst your engagement rules and requirements. DXP allows a business to control its online presence on CMSs, portals, and eCommerce stores.
       </p>
         </div>
 
@@ -399,8 +60,7 @@ display: grid;
           <h3>Seamless and Continuous Connectivity</h3>
           <img src="https://cdn-icons-png.flaticon.com/512/6212/6212850.png" alt="Connectivity">
            <p>
-        Digital Experience Platform (DXP) furnishes the customer’s journey and experience with a business or brand 
-        with a motive to reimagine their engagement.
+                Interact with your customers at any time and on any device with effective flexibility creating an omnichannel customer experience structure. Distribute news, share messages, and send notifications via multiple digital channels connected to a single platform improving customer touchpoints. t.
       </p>
         </div>
 
@@ -409,8 +69,7 @@ display: grid;
           <h3>Collaborate Like Never Before</h3>
           <img src="https://cdn-icons-png.flaticon.com/512/6212/6212939.png" alt="Online Presence">
            <p>
-        Digital Experience Platform (DXP) furnishes the customer’s journey and experience with a business or brand 
-        with a motive to reimagine their engagement.
+                DXP is not limited to customer interactions; it also includes integrating business components and technologies together. With DXP, you can integrate commerce, content, cloud, and APIs while staying connected to the required technologies. As a result, businesses grow and expand faster. Improve the facilities in marketing, commerce, and customer support while obtaining a 360-degree view of every customer and stakeholder. 
       </p>
         </div>
 
@@ -419,8 +78,7 @@ display: grid;
           <h3>Data-Driven Decision Making</h3>
           <img src="https://cdn-icons-png.flaticon.com/512/6212/6212850.png" alt="Connectivity">
            <p>
-        Digital Experience Platform (DXP) furnishes the customer’s journey and experience with a business or brand 
-        with a motive to reimagine their engagement.
+        DXPs have in-built systems to track important business KPIs and measure performance by aggregating data from multiple channels. Businesses can leverage this to create individualized trends and patterns of every type of customer. The ability to get relevant customer journeys and data empowers businesses to target customers at every touchpoint. 
       </p>
         </div>
          </div>
@@ -430,8 +88,7 @@ display: grid;
           <h3>Data-Driven Decision Making</h3>
           <img src="https://cdn-icons-png.flaticon.com/512/6212/6212850.png" alt="Connectivity">
            <p>
-        Digital Experience Platform (DXP) furnishes the customer’s journey and experience with a business or brand 
-        with a motive to reimagine their engagement.
+        We can build the requisite DXP platforms integrated with automation functions and operations. As a result, it becomes easier to manage complex, and multi-tier tasks and operations as the repetitive tasks and operations are completed without any delays and human intervention.ent.
       </p>
         </div>
          </div>
@@ -443,7 +100,7 @@ display: grid;
   
                                                        {{-- #my select section # --}}
 
-  <div class="container">
+     <div class="select-container">
         <h1 class="main-title">DXP Solutions We Excel At QWIP24</h1>
         
         <div class="solutions-list">
@@ -487,8 +144,7 @@ display: grid;
                 </div>
                 <div class="solution-content">
                     <div class="solution-description">
-                        Strengthen your partner relationships with dedicated portal solutions that facilitate collaboration, resource sharing, and communication. Our partner portals provide secure access to relevant tools and information while maintaining brand consistency.
-                    </div>
+                        Build better opportunities for your partners, give them technological support, and support their customers to get better experiences with DXP partner portals. Create personalized portals for every partner and give them secure access to a wide range of materials, data, infrastructure, and information.            </div>
                 </div>
             </div>
 
@@ -499,8 +155,8 @@ display: grid;
                 </div>
                 <div class="solution-content">
                     <div class="solution-description">
-                        Our integration portal solutions connect disparate systems and applications, creating unified digital experiences. We specialize in seamless data flow, API management, and creating cohesive user experiences across multiple platforms and services.
-                    </div>
+                       Whether you are working with legacy IT systems or modern, disparate portals, DXP has the power to bring them together and overhaul your operational experiences within the organization. Unify the organizational systems and eliminate silos leading to connected databases. With Integration portals, you will find it easier to streamline complex processes and add convenience to the entire structure.
+             </div>
                 </div>
             </div>
         </div>
@@ -520,8 +176,7 @@ display: grid;
                 </div>
                 <div class="solution-content">
                     <div class="solution-description">
-                        Our integration portal solutions connect disparate systems and applications, creating unified digital experiences. We specialize in seamless data flow, API management, and creating cohesive user experiences across multiple platforms and services.
-                    </div>
+                       Customers and end users will get seamless digital experiences with DXP. Businesses can create precise, personalized experiences for them based on different parameters, including location, motive, device, timing, etc. The collection and analysis of data allow businesses to provide loyalty programs and rewards to specific groups of customers. As a result, businesses can easily adopt a customer-centric approach to marketing and lead the market with a product differentiation strategy.                </div>
                 </div>
             </div>
 
@@ -532,8 +187,10 @@ display: grid;
                 </div>
                 <div class="solution-content">
                     <div class="solution-description">
-                        Our integration portal solutions connect disparate systems and applications, creating unified digital experiences. We specialize in seamless data flow, API management, and creating cohesive user experiences across multiple platforms and services.
-                    </div>
+                       When a business decides to integrate DXP and its systems, they gain a competitive advantage. This comes with the ability to work and switch between different business models. It gives a business better control and independence to manage their online and offline operations. It gives them the benefit of configuring campaigns, extracting information, and tracking metrics all at once and implementing them at different touchpoints.
+  <br> <br>
+                            Moreover, DXP is one of the most efficient ways to complete a business's digital transformation journey. It can bring effective automation to the business and also increase the level of collaboration between different departments and operations               
+                 </div>
                 </div>
             </div>
       
@@ -546,11 +203,12 @@ display: grid;
                 </div>
                 <div class="solution-content">
                     <div class="solution-description">
-                        Our integration portal solutions connect disparate systems and applications, creating unified digital experiences. We specialize in seamless data flow, API management, and creating cohesive user experiences across multiple platforms and services.
+                      QWIP24 is an end-to-end DXP solutions provider creating bespoke portals and systems for businesses according to their requirements. We bring higher levels of accessibility and collaboration into a business environment.                  
                     </div>
                 </div>
             </div>
         </div>
+     </div>
 
       <script>
         function toggleSolution(header) {
