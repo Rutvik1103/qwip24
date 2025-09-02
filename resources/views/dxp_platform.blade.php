@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QWIP24 - Digital Experience Platform</title>
 
+
   <link rel="stylesheet" href="{{asset('css/solution1.css')}}">
     <link rel="stylesheet" href="{{asset('css/home.css')}}">
- 
+
 </head>
 
 <body>
@@ -58,6 +59,7 @@
   <div class="dxp-container">
 
     <!-- Why Choose Section -->
+
     <div class="dxp-intro">
       <h2>Why Choose Digital Experience Platform (DXP)?</h2>
       <p>
@@ -69,6 +71,7 @@
     </div>
 
     <!-- Benefits Section -->
+
     <div class="dxp-benefits">
       <h2>Benefits of Digital Experience Platforms (DXP)</h2>
 
@@ -79,8 +82,7 @@
           <h3>Enhanced Online Presence</h3>
           <img src="https://cdn-icons-png.flaticon.com/512/6212/6212939.png" alt="Online Presence">
              <p>
-        Digital Experience Platform (DXP) furnishes the customer’s journey and experience with a business or brand 
-        with a motive to reimagine their engagement.
+                  DXP makes it easier for a business to cover all bases at once with incredible flexibility and speed. It allows your brand to deploy individual digital experiences for employees, customers, and stakeholders amidst your engagement rules and requirements. DXP allows a business to control its online presence on CMSs, portals, and eCommerce stores.
       </p>
         </div>
 
@@ -89,8 +91,7 @@
           <h3>Seamless and Continuous Connectivity</h3>
           <img src="https://cdn-icons-png.flaticon.com/512/6212/6212850.png" alt="Connectivity">
            <p>
-        Digital Experience Platform (DXP) furnishes the customer’s journey and experience with a business or brand 
-        with a motive to reimagine their engagement.
+                Interact with your customers at any time and on any device with effective flexibility creating an omnichannel customer experience structure. Distribute news, share messages, and send notifications via multiple digital channels connected to a single platform improving customer touchpoints. t.
       </p>
         </div>
 
@@ -99,8 +100,7 @@
           <h3>Collaborate Like Never Before</h3>
           <img src="https://cdn-icons-png.flaticon.com/512/6212/6212939.png" alt="Online Presence">
            <p>
-        Digital Experience Platform (DXP) furnishes the customer’s journey and experience with a business or brand 
-        with a motive to reimagine their engagement.
+                DXP is not limited to customer interactions; it also includes integrating business components and technologies together. With DXP, you can integrate commerce, content, cloud, and APIs while staying connected to the required technologies. As a result, businesses grow and expand faster. Improve the facilities in marketing, commerce, and customer support while obtaining a 360-degree view of every customer and stakeholder. 
       </p>
         </div>
 
@@ -109,8 +109,7 @@
           <h3>Data-Driven Decision Making</h3>
           <img src="https://cdn-icons-png.flaticon.com/512/6212/6212850.png" alt="Connectivity">
            <p>
-        Digital Experience Platform (DXP) furnishes the customer’s journey and experience with a business or brand 
-        with a motive to reimagine their engagement.
+        DXPs have in-built systems to track important business KPIs and measure performance by aggregating data from multiple channels. Businesses can leverage this to create individualized trends and patterns of every type of customer. The ability to get relevant customer journeys and data empowers businesses to target customers at every touchpoint. 
       </p>
         </div>
          </div>
@@ -120,8 +119,7 @@
           <h3>Data-Driven Decision Making</h3>
           <img src="https://cdn-icons-png.flaticon.com/512/6212/6212850.png" alt="Connectivity">
            <p>
-        Digital Experience Platform (DXP) furnishes the customer’s journey and experience with a business or brand 
-        with a motive to reimagine their engagement.
+        We can build the requisite DXP platforms integrated with automation functions and operations. As a result, it becomes easier to manage complex, and multi-tier tasks and operations as the repetitive tasks and operations are completed without any delays and human intervention.ent.
       </p>
         </div>
          </div>
@@ -133,7 +131,9 @@
   
                                                        {{-- #my select section # --}}
 
+
   <div class="select-container">
+
         <h1 class="main-title">DXP Solutions We Excel At QWIP24</h1>
         
         <div class="solutions-list">
@@ -177,8 +177,7 @@
                 </div>
                 <div class="solution-content">
                     <div class="solution-description">
-                        Strengthen your partner relationships with dedicated portal solutions that facilitate collaboration, resource sharing, and communication. Our partner portals provide secure access to relevant tools and information while maintaining brand consistency.
-                    </div>
+                        Build better opportunities for your partners, give them technological support, and support their customers to get better experiences with DXP partner portals. Create personalized portals for every partner and give them secure access to a wide range of materials, data, infrastructure, and information.            </div>
                 </div>
             </div>
 
@@ -189,8 +188,8 @@
                 </div>
                 <div class="solution-content">
                     <div class="solution-description">
-                        Our integration portal solutions connect disparate systems and applications, creating unified digital experiences. We specialize in seamless data flow, API management, and creating cohesive user experiences across multiple platforms and services.
-                    </div>
+                       Whether you are working with legacy IT systems or modern, disparate portals, DXP has the power to bring them together and overhaul your operational experiences within the organization. Unify the organizational systems and eliminate silos leading to connected databases. With Integration portals, you will find it easier to streamline complex processes and add convenience to the entire structure.
+             </div>
                 </div>
             </div>
         </div>
@@ -210,8 +209,7 @@
                 </div>
                 <div class="solution-content">
                     <div class="solution-description">
-                        Our integration portal solutions connect disparate systems and applications, creating unified digital experiences. We specialize in seamless data flow, API management, and creating cohesive user experiences across multiple platforms and services.
-                    </div>
+                       Customers and end users will get seamless digital experiences with DXP. Businesses can create precise, personalized experiences for them based on different parameters, including location, motive, device, timing, etc. The collection and analysis of data allow businesses to provide loyalty programs and rewards to specific groups of customers. As a result, businesses can easily adopt a customer-centric approach to marketing and lead the market with a product differentiation strategy.                </div>
                 </div>
             </div>
 
@@ -222,8 +220,10 @@
                 </div>
                 <div class="solution-content">
                     <div class="solution-description">
-                        Our integration portal solutions connect disparate systems and applications, creating unified digital experiences. We specialize in seamless data flow, API management, and creating cohesive user experiences across multiple platforms and services.
-                    </div>
+                       When a business decides to integrate DXP and its systems, they gain a competitive advantage. This comes with the ability to work and switch between different business models. It gives a business better control and independence to manage their online and offline operations. It gives them the benefit of configuring campaigns, extracting information, and tracking metrics all at once and implementing them at different touchpoints.
+  <br> <br>
+                            Moreover, DXP is one of the most efficient ways to complete a business's digital transformation journey. It can bring effective automation to the business and also increase the level of collaboration between different departments and operations               
+                 </div>
                 </div>
             </div>
       
@@ -236,12 +236,13 @@
                 </div>
                 <div class="solution-content">
                     <div class="solution-description">
-                        Our integration portal solutions connect disparate systems and applications, creating unified digital experiences. We specialize in seamless data flow, API management, and creating cohesive user experiences across multiple platforms and services.
+                      QWIP24 is an end-to-end DXP solutions provider creating bespoke portals and systems for businesses according to their requirements. We bring higher levels of accessibility and collaboration into a business environment.                  
                     </div>
                 </div>
             </div>
         </div>
-      </div>
+     </div>
+
 
       <script>
         function toggleSolution(header) {
