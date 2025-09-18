@@ -17,7 +17,7 @@
         <li>
           <a href="#">Solutions ▾</a>
           <ul>
-            <li><a href="{{route('platform')}}">Digital Experience Platform</a></li>
+            <li><a href="{{route('dxp.index')}}">Digital Experience Platform</a></li>
             <li><a href="#">Digital Experience Designing</a></li>
             <li><a href="#">Robotic Process Automation</a></li>
           </ul>
@@ -29,13 +29,23 @@
             <li><a href="#">WordPress Development Services</a></li>
             <li><a href="#">Application Maintenance & Support</a></li>
           </ul>
+
+          {{-- //this is for admin --}}
         </li>
-        <li><a href="#">About</a></li>
+    @if(session('role') === 'admin')
+       <li> <a href="{{route('admin')}}">Go to Admin Dashboard</a></li>
+    @endif
+    
+         <li><a href="#">About</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
     </div>
     <a href="#" class="get-started">Let's Get Started!</a>
   </nav>
+
+      
+
+    
 
   
 

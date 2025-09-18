@@ -19,7 +19,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;                                                                             
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
@@ -27,56 +27,54 @@
 
     /* ===== Hero Section ===== */
     .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 120px;
-      gap: 200px;
-    }
 
-    .hero-text {
-      flex: 1;
-    }
+  padding: 120px;  /* space between hero blocks */
+}
 
-    .hero-text h1 {
-      font-size: 42px;
-      color: #2a6edc;
-      margin-top: 5px;
-      margin-bottom: 29px;
-     border-bottom: 2px solid #f58220;
-    }
+.hero.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px;
+  gap: 200px;
+}
 
-    .hero-text p {
-      font-size: 18px;
-      margin-bottom: 20px;
-      color: #555;
-    }
+.hero-text h1 {
+  font-size: 42px;
+  color: #2a6edc;
+  margin-top: 5px;
+  margin-bottom: 29px;
+  border-bottom: 2px solid #f58220;
+  
+}
 
-    .hero-text .btn {
-      background: #2a6edc;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
 
-    .hero-text .btn:hover {
-      background: #f58220;
-    }
+.hero-text .btn {
+  background: #2a6edc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-    .hero-img {
-      flex: 1;
-    }
+.hero-text .btn:hover {
+  background: #f58220;
+  
+}
 
-    .hero-img img {
-      width: 100%;
-      max-width: 500px;
-    }
+.hero-img img {
+  width: 100%;
+  max-width: 500px;
+}
 
-   
 
     /* ===== Section Wrapper ===== */
 .dxp-section {
@@ -157,7 +155,7 @@ display: grid;
   color: #2a6edc;
   margin-top: 100px;
   margin-right: 700px;
-  border-bottom: 2px solid #d67927;
+  border-bottom: 2px solid #f58220;
   display: inline-block;
   padding-bottom: 4px;
   
@@ -193,6 +191,7 @@ display: grid;
             color: #4a90e2;
             margin-bottom: 40px;
             letter-spacing: -0.5px;
+            border-bottom: 2px solid #f58220;
         }
 
         .solutions-list {
@@ -315,3 +314,98 @@ display: grid;
             }
 
           }
+
+
+
+/* .deletes{
+
+
+    background: #2a6edc;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-left: 90%;
+      
+}
+
+*/
+
+.delete1{
+  
+     background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-left: 30%;
+      
+
+} 
+
+/* .bn-de{
+  background-color: #e4d8dc57;
+} */
+
+/* .insert {
+
+
+    background: #2a6edc;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-left: 80%;
+      
+      
+} 
+
+
+ */
+
+
+
+
+/* Container to hold buttons side by side */
+.button-group {
+    display: flex;
+    align-items: center;   /* Align vertically */
+    gap: 10px;      
+    margin-left: 80%;       /* Space between buttons */
+}
+
+/* Common styles for buttons and links */
+.button-group a,
+.button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline from <a> */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Specific colors */
+.button-group a.delete {
+    background-color: #28a745; /* Green for Insert link */
+}
+
+.button-group button.delete {
+    background-color: #dc3545; /* Red for Delete button */
+}
+
+/* Hover effect */
+.button-group a.delete:hover,
+.button-group button.delete:hover {
+    opacity: 0.8;
+}
