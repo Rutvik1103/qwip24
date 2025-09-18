@@ -3,7 +3,6 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
     }
 
     body {
@@ -185,6 +184,7 @@ display: grid;
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
+             
         }
 
         .main-title {
@@ -193,10 +193,12 @@ display: grid;
             color: #4a90e2;
             margin-bottom: 40px;
             letter-spacing: -0.5px;
+             border-bottom: 2px solid #f58220;
         }
 
         .solutions-list {
             margin-bottom: 60px;
+            
         }
 
         .solution-item {

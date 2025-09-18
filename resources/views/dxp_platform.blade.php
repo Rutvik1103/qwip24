@@ -133,7 +133,7 @@
 
 
   <div class="select-container">
-
+       
         <h1 class="main-title">DXP Solutions We Excel At QWIP24</h1>
         
         <div class="solutions-list">
@@ -197,7 +197,7 @@
         <div class="info-section">
             <h2 class="section-title">Knowing the Different DXP Components</h2>
             <p class="section-description">
-                <span class="highlight-text">DXP</span> is applicable to different types of groups of individuals and entities, giving them better control, engagement, and ability to interact. At <span class="highlight-text">QWIP24</span>, we can help businesses establish seamless integration and continuity enabled with intelligent DXP solutions and channels.
+                {{-- <span class="highlight-text">DXP</span>--}} Dxp is applicable to different types of groups of individuals and entities, giving them better control, engagement, and ability to interact. At <span class="highlight-text">QWIP24</span>, we can help businesses establish seamless integration and continuity enabled with intelligent DXP solutions and channels.
             </p>
         </div>
    
